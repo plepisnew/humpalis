@@ -2,19 +2,23 @@ import { PaletteOptions } from '@mui/material';
 
 declare module '@mui/material/styles' {
     interface Palette {
-        page: {
-            backgroundColor: string;
+        top: {
+            main: string;
+            contrastText: string;
         };
-        header: {
-            backgroundColor: string;
+        bottom: {
+            main: string;
+            contrastText: string;
         };
     }
     interface PaletteOptions {
-        page: {
-            backgroundColor: string;
+        top: {
+            main: string;
+            contrastText: string;
         };
-        header: {
-            backgroundColor: string;
+        bottom: {
+            main: string;
+            contrastText: string;
         };
     }
 }
@@ -32,11 +36,13 @@ const palette: PaletteOptions = {
         dark: 'rgb(194, 24, 91)',
         contrastText: 'rgb(255, 255, 255)'
     },
-    header: {
-        backgroundColor: 'rgb(33, 33, 33)'
+    top: {
+        main: 'rgb(33, 33, 33)',
+        contrastText: 'rgb(255, 255, 255)'
     },
-    page: {
-        backgroundColor: 'rgb(224, 224, 224)'
+    bottom: {
+        main: 'rgb(224, 224, 224)',
+        contrastText: 'rgb(0, 0, 0)'
     }
 };
 

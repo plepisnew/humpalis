@@ -1,11 +1,29 @@
 import { ThemeOptions } from '@mui/material';
-import Header from '@/components/Header';
 const components: ThemeOptions['components'] = {
-    Header: {
-        defaultProps: {
-            height: ''
-        },
-        styleOverrrides: {}
+    MuiAppBar: {
+        styleOverrides: {
+            root: ({ theme }) => ({
+                backgroundColor: theme.palette.top.main,
+                color: theme.palette.top.contrastText,
+                height: '70px',
+                fontFamily: 'Nunito'
+            })
+        }
+    },
+    MuiBottomNavigation: {
+        styleOverrides: {
+            root: ({ theme }) => ({
+                backgroundColor: theme.palette.top.main,
+                color: theme.palette.top.contrastText
+            })
+        }
+    },
+    MuiBottomNavigationAction: {
+        styleOverrides: {
+            root: {
+                color: 'inherit'
+            }
+        }
     }
 };
 

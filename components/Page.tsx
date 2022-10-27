@@ -8,14 +8,13 @@ type Props = {
 
 const Page: React.FC<Props> = ({ children }) => {
     const theme: Theme = useTheme();
-    const { page } = theme.palette;
-    const { backgroundColor } = page;
+    const { bottom } = theme.palette;
+    const { main } = bottom;
     return (
         <Box
             sx={{
-                width: '100%',
-                backgroundColor,
-                padding: '2rem',
+                backgroundColor: main,
+                padding: '2rem !important',
                 height: '2000px'
             }}
         >
